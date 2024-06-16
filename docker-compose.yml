@@ -26,3 +26,15 @@ services:
     volumes:
       - ./nginx2.conf:/etc/nginx/conf.d/default.conf
       - ./webroot/beispiel-2:/etc/nginx/html
+
+  ftp:
+    image: garethflowers/ftp-server
+    container_name: ftp
+    environment:
+      FTP_PASS: $FTP_PASS
+      FTP_USER: user
+    ports:
+      - 20-21:20-21/tcp
+      - 40000-40009:40000-40009/tcp
+    volumes:
+      - ./ftproot:/home/user
