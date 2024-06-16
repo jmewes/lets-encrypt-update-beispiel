@@ -19,8 +19,8 @@ ssh root@${DROPLET_IP}
 
 ```
 git clone https://github.com/jmewes/lets-encrypt-update-beispiel.git
+cd lets-encrypt-update-beispiel
+
+export FTP_PASS=xxx
+docker compose up -d
 ```
-
-Start ngnix server
-
-
