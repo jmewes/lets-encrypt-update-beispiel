@@ -20,3 +20,7 @@ ssh root@${DROPLET_IP}
 ```
 git clone https://github.com/jmewes/lets-encrypt-update-beispiel.git
 ```
+
+Start ngnix server
+
+
