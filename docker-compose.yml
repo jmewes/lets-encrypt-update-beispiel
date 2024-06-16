@@ -37,4 +37,4 @@ services:
       - 20-21:20-21/tcp
       - 40000-40009:40000-40009/tcp
     volumes:
-      - ./ftproot:/home/user
+      - /ftproot:/home/user
